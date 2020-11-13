@@ -1,0 +1,75 @@
+/* @@@ Browser Resets And Overrides @@@ */
+  * { margin: 0; padding: 0; box-sizing: border-box;list-style: none; text-decoration: none; border: 0; }
+  div, body, main, header, nav, section, aside, article, footer, form, label, hgroup, details, dt, ul, li, 
+  ol, img, figure, figcaption, summary { display:block; float:left; }
+  html { width:100vw;  height:100vh;  font-size: 62.5%;   line-height: 1.5em;  scroll-behavior: smooth; }
+  h1 { font-size: 150%; line-height:  2em; }              h2     { font-size: 134%; line-height:   2em; }
+  h3 { font-size: 117%; line-height: 1.75em; }            h4,p,a { font-size: 100%; line-height: 1.5em; }
+  h5 { font-size:  91%; line-height:  1.5em; }            h6     { font-size:  82%; line-height: 1.5em; }
+  select,option,input,input[type="text"],input [type="button"],input[type="submit"],input [type="search"],
+  input [ type="email" ],  input [ type="password"],  input [ type="checkbox" ],   input [ type="radio" ]
+  { -moz-appearance: none; -webkit-appearance: none; }              select::-ms-expand { display: none; }
+  textarea{resize:none; overflow-y:auto;}  input,button,textarea{font-family:inherit; font-size:inherit;}
+  body, header, nav, main, section, footer, h1 ,h2 ,img ,figure,figcaption, form, input, textarea, iframe,
+  .col,.top,.btm,.ytembed { width: 100%; }
+
+  /* ~~~ Custom Elements ~~~ */
+  
+    .c10{ width:10%; } .c20 { width:20%; } .c25 { width:25%; } .c30 { width: 30%; }   .c33 { width:33%; }  
+    .c40{ width:40%; } .c50 { width:50%; } .c60 { width:60%; } .c66 { width: 66%; }   .c70 { width:70%; }  
+    .c75{ width:75%; } .c80 { width:80%; } .c90 { width:90%; } .col { width:100%; } 
+    .cnt { float:none; margin-left:auto; margin-right:auto; }  .right { right:0; float:right; }
+    .flex { display:flex; }  .flexcnt { justify-content:center; }
+    .ctxt { text-align: center; }  .jtxt { text-align: justify; }
+    .mt10 { margin-top: 10vh; }
+  
+/* @@@ Template Styling @@@ */
+
+  body { font-family: sans-serif; color: black; background-color: rgb(255,245,235); }
+  main { margin: 2.5em 0 0; }  .usermenu li a { display: block; padding: 0 .5em; }
+  header, .usermenu { position: fixed; }  a { color: rgb(110,110,110); }
+  h1, h2, .usermenu li, .usermenu li a { width: 100%; } a:hover { color: black; }
+  a { transition: .2s ease; } 
+  header { height: 2.5em; padding: 0 10vw; border-bottom: 1px solid rgb(235,225,215); 
+    box-shadow: 0px 3px 7px 1px rgb(140,105,65);}
+
+
+  /* ~~~ Navigation ~~~ */
+
+    .togglebtn { display: block; width: 1.8em; height: 1.8em; margin: .25em 0 0;  padding: 0; }
+    .togglebtn svg { position: absolute; height: 1.6em; width: 1.6em; pointer-events: none; }
+    .profilesvg { margin: .1em 0 0; }  .usernav { width: auto; }
+    .usermenu ul { min-width: calc(10vw + 5em); min-height: 1.5em; }
+    .usermenu { border-left: 1px solid rgb(235,225,215); 
+      border-bottom: 1px solid rgb(235,225,215);
+      box-shadow: -3px 3px 3px rgb(140,105,65) }                                             .usernav li { margin: 0 .25em; }
+    .usermenu, .cartmenu { display: none;  position: absolute; top: calc(2.5em - 1px); z-index: 1000; background-color: rgb(255, 245, 235);}
+    .cartmenu { left: calc(30vw - 2em); width: 40%; min-height: 50vh;
+       margin: 2em; box-shadow: 0px 3px 7px 1px rgb(140,105,65); }
+
+/* @@@ Media Queries | Ultra Responsive CSS @@@ */
+
+  @media screen and (min-width: 1919px)  /*Full HD 1080p*/   {
+    body{font-size:2.5em;}
+  }
+  @media screen and (max-width: 1918px)  /*Full HD 1080p*/   {
+    body{font-size:2em;}
+  }
+  @media screen and (max-width: 1278px)  /*HD Ready 720p*/   {
+    body{font-size:1.9em;}  .cartmenu {left: calc(20vw - 2em); width: 60%;} 
+  }
+  @media screen and (max-width: 958px) /*Tablets & laptops*/ {
+    body{font-size:1.8em;}
+  }
+  @media screen and (max-width: 818px)  /*HIGH RES PHONES*/  {
+    body{font-size:1.7em;}
+  }
+  @media screen and (max-width: 719px)   /*Average PHONE*/   {
+    body{font-size:1.6em;}  .cartmenu {left: calc(5vw - 2em); width: 90%;}
+  }
+  @media screen and (max-width: 479px)   /*SMALL SCREENS*/   {
+
+  }
+  @media screen and (max-width: 319px)    /*MINI SCREENS*/   {
+    body{font-size:1.4em;}
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi Element JavaScript Toggle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="usernav right">
+      <ul>
+        <li>
+          <a href='javascript:void(0)' class='togglebtn' onclick="toggleElem('userMenu')">
+            <svg class='profilesvg' viewBox='0 0 22 22'>
+              <path d='m16.428 15.744c-.159-.052-1.164-.505-.536-2.414h-.009c1.637-1.686 2.888-4.399 2.888-7.07 0-4.107-2.731-6.26-5.905-6.26-3.176 0-5.892 2.152-5.892 6.26 0 2.682 1.244 5.406 2.891 7.088.642 1.684-.506 2.309-.746 2.396-2.238.724-8.325 4.332-8.229 9.586h24.05c.107-5.02-4.708-8.279-8.513-9.586' transform='matrix(.63167 0 0 .63167 2.846 2.999)'/>
+            </svg>
+          </a>
+        </li>
+        <menu id='userMenu' class='usermenu right'>
+          <ul>
+            <li><a href=''>Login</a></li>
+            <li><a href=''>Sign Up</a></li>
+          </ul>
+        </menu>
+        <li>
+          <a href='javascript:void(0)' class='togglebtn' onclick="toggleElem('cartMenu')">
+            <svg class="cart" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 32 32">
+              <path d="M14.568 25.629c-1.222 0-2.111.889-2.111 2.111 0 1.111 1 2.111 2.111 2.111 1.222 0 2.111-.889 2.111-2.111s-.889-2.111-2.111-2.111zm10.22 0c-1.222 0-2.111.889-2.111 2.111 0 1.111 1 2.111 2.111 2.111 1.222 0 2.111-.889 2.111-2.111s-.889-2.111-2.111-2.111zm2.555-3.777H12.457L7.347 7.078c-.222-.333-.555-.667-1-.667H1.792c-.667 0-1.111.444-1.111 1s.444 1 1.111 1h3.777l5.11 14.885c.111.444.555.666 1 .666h15.663c.555 0 1.111-.444 1.111-1 0-.666-.555-1.111-1.111-1.111zm2.333-11.442l-18.44-1.555h-.111c-.555 0-.777.333-.667.889l3.222 9.22c.222.555.889 1 1.444 1h13.441c.555 0 1.111-.444 1.222-1l.778-7.443c.111-.555-.333-1.111-.889-1.111zm-2 7.443H15.568l-2.333-6.776 15.108 1.222-.666 5.554z"/>
+            </svg>
+          </a>
+        </li>
+        <menu id='cartMenu' class='cartmenu'>
+          <div class="cart c70 cnt">
+            <h1 class="ctxt" style="pointer-events: none;">Cart</h1>
+            <h2 class="ctxt" style="pointer-events: none;">Buy Something LOL</h2>
+          </div>
+        </menu>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="mt10 ctxt">Multi Element<br>JavaScript Toggle</h1>
+  </main>
+<script src="elements.js"></script>
+</body>
+</html>
