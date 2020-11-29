@@ -42,10 +42,12 @@
     .usermenu ul { min-width: calc(10vw + 5em); min-height: 1.5em; }
     .usermenu { border-left: 1px solid rgb(235,225,215); 
       border-bottom: 1px solid rgb(235,225,215);
-      box-shadow: -3px 3px 3px rgb(140,105,65) }                                             .usernav li { margin: 0 .25em; }
-    .usermenu, .cartmenu { display: none;  position: absolute; top: calc(2.5em - 1px); z-index: 1000; background-color: rgb(255, 245, 235);}
+      box-shadow: -3px 3px 3px rgb(140,105,65) }                                             
+    .usernav li { margin: 0 .25em; }
+    .usermenu, .cartmenu { display: none;  position: absolute; top: calc(2.5em - 1px); z-index: 1000; 
+      background-color: rgb(255, 245, 235);}
     .cartmenu { left: calc(30vw - 2em); width: 40%; min-height: 50vh;
-       margin: 2em; box-shadow: 0px 3px 7px 1px rgb(140,105,65); }
+      margin: 2em; box-shadow: 0px 3px 7px 1px rgb(140,105,65); }
 
 /* @@@ Media Queries | Ultra Responsive CSS @@@ */
 
