@@ -25,7 +25,7 @@
   
 /* @@@ Template Styling @@@ */
 
-  body { font-family: sans-serif; color: black; background-color: rgb(255,245,235); }
+  body { font-family: sans-serif; color: black; background-color: rgb(255,250,240); }
   main { margin: 2.5em 0 0; }  .usermenu li a { display: block; padding: 0 .5em; }
   header, .usermenu { position: fixed; }  a { color: rgb(110,110,110); }
   h1, h2, .usermenu li, .usermenu li a { width: 100%; } a:hover { color: black; }
@@ -45,7 +45,7 @@
       box-shadow: -3px 3px 3px rgb(140,105,65) }                                             
     .usernav li { margin: 0 .25em; }
     .usermenu, .cartmenu { display: none;  position: absolute; top: calc(2.5em - 1px); z-index: 1000; 
-      background-color: rgb(255, 245, 235);}
+      background-color: rgb(255,250,240);}
     .cartmenu { left: calc(30vw - 2em); width: 40%; min-height: 50vh;
       margin: 2em; box-shadow: 0px 3px 7px 1px rgb(140,105,65); }
 
